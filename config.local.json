@@ -1,0 +1,14 @@
+{
+  "B2B_BASE_VAULT_ID": "2",
+  "BALANCE_HISTORY_API_SERVICE": "http://balance-history-api",
+  "FIREBLOCKS_API_SERVICE": "http://localhost:7004",
+  "QUEUE_AMQP_URL": "amqp://user:password@localhost:5672?heartbeat=60",
+  "PUBLISH_DEPOSITS": "fireblocks.deposits",
+  "PUBLISH_WITHDRAWALS": "fireblocks.withdrawals",
+  "PUBLISH_FIREBLOCKS_ERROR": "fireblocks.process:error",
+  "PUBLISH_INTERNAL": "fireblocks.internal:transfer",
+  "NOTIFIER_EMAIL_SERVICE": "http://localhost:7002",
+  "whiteList": ["authorizeUser", "sendResetPasswordEmail", "verifyEmail"],
+  "TRANSACTIONS_API_SERVICE": "http://localhost:7001",
+  "UNISWAP_API_SERVICE": "http://localhost:7002"
+}

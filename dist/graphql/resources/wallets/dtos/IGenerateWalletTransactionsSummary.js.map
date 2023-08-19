@@ -1,0 +1,1 @@
+{"version":3,"file":"IGenerateWalletTransactionsSummary.js","sourceRoot":"","sources":["../../../../../src/graphql/resources/wallets/dtos/IGenerateWalletTransactionsSummary.ts"],"names":[],"mappings":";;AAKA;IAME;QAHA;;;;;WAAqB;QACrB;;;;;WAAiC;QAG/B,IAAI,CAAC,YAAY,GAAG,CAAC,CAAC;QACtB,IAAI,CAAC,YAAY,GAAG,EAAwB,CAAC;IAC/C,CAAC;IACH,yCAAC;AAAD,CAAC,AAVD,IAUC"}

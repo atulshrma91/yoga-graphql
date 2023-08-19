@@ -1,0 +1,1 @@
+{"version":3,"file":"IGenerateStakingAssetsSummary.js","sourceRoot":"","sources":["../../../../../src/graphql/resources/wallets/dtos/IGenerateStakingAssetsSummary.ts"],"names":[],"mappings":";;AAEA;IAME;QAHA;;;;;WAAqB;QACrB;;;;;WAA2B;QAGzB,IAAI,CAAC,YAAY,GAAG,CAAC,CAAC;QACtB,IAAI,CAAC,MAAM,GAAG,EAAwB,CAAC;IACzC,CAAC;IACH,oCAAC;AAAD,CAAC,AAVD,IAUC"}

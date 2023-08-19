@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.userMutations = exports.userQueries = exports.userTypes = void 0;
+var graphql_scalars_1 = require("graphql-scalars");
+var userTypes = "\n  ".concat(graphql_scalars_1.DateTimeTypeDefinition, "\n  type User{\n    userId: String!\n    email: String!\n    userName: String\n    firstName: String\n    lastName: String\n    isEmailVerified: Boolean\n    referenceCode: String\n    mobileNumber: String\n    phoneNumber: String\n    isWhitelistEnabled: Boolean\n    is2faEnabled: Boolean\n    dob: String\n    gender: String\n    receiveNewsletter: Boolean\n    image: String\n    google2faSecret: String\n    loginHistories: [LoginHistory]\n    userAddress: [UserAddress]\n    userRole: [UserRole]\n  }\n\n  type UserRole {\n    userRoleTypeId: Int,\n    userId: String!\n  }\n\n  type LoginHistory {\n    ipAddress: String,\n    accessDevice: String,\n    accessLocation: String,\n    browser: String,\n    createdAt: DateTime\n  }\n\n  type UserAddress {\n    addressLine1: String,\n    addressLine2: String,\n    City: String,\n    State: String,\n    Zipcode: String,\n  }\n\n  type UserMembership {\n    membershipProgramId: String!,\n    userId: String!,\n    membershipStartDate: DateTime!,\n    isCurrent: Boolean!,\n    membershipEndedDate: DateTime,\n    membershipPrograms: MembershipProgram!\n  }\n\n  type MembershipProgram {\n    programName: String!\n    products: product\n  }\n\n  type MailSentOutput {\n    mail: String!\n  }\n\n  type VerifyEmailOutput{\n    verified: Boolean!\n    message: String!\n  }\n\n  type GoogleRegisterOutput {\n    success: Boolean!\n    message: String!\n  }\n\n");
+exports.userTypes = userTypes;
+var userQueries = "\n  user: User!\n  getUserMemberships: [UserMembership]\n";
+exports.userQueries = userQueries;
+var userMutations = "\n  authorizeUser: User!\n  getUserMembership: UserMembership!\n  sendResetPasswordEmail(email: String!): MailSentOutput\n  sendVerificationEmailNewUser(email: String!, referralCode: String): MailSentOutput\n  resendVerificationEmail: MailSentOutput\n  verifyEmail(oobCode: String!): VerifyEmailOutput\n  sendUserGoogleRegister(userName: String!, referralCode: String): GoogleRegisterOutput\n";
+exports.userMutations = userMutations;
+//# sourceMappingURL=users.schema.js.map

@@ -1,0 +1,20 @@
+{
+  "extends": "@connectfinancial/tsconfig",
+  "include": ["src/*.ts", "src/*.d.ts"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["esnext"],
+    "rootDir": "./src",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "allowJs": true,
+    "paths": {},
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
